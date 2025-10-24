@@ -39,7 +39,7 @@
         header {
             background: linear-gradient(135deg, var(--primary), #ff8c00);
             color: white;
-            padding: 20px 0;
+            padding: 15px 0; /* Уменьшил padding */
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
@@ -53,15 +53,15 @@
         }
 
         .logo {
-            font-size: 28px;
+            font-size: 22px; /* Уменьшил размер шрифта */
             font-weight: 700;
             display: flex;
             align-items: center;
         }
 
         .logo i {
-            margin-right: 10px;
-            font-size: 32px;
+            margin-right: 8px; /* Уменьшил отступ */
+            font-size: 26px; /* Уменьшил размер иконки */
         }
 
         nav ul {
@@ -70,16 +70,16 @@
         }
 
         nav ul li {
-            margin-left: 30px;
+            margin-left: 25px; /* Уменьшил отступы между пунктами меню */
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: 600;
-            font-size: 18px;
+            font-size: 16px; /* Уменьшил размер шрифта */
             transition: all 0.3s ease;
-            padding: 8px 12px;
+            padding: 6px 10px; /* Уменьшил padding */
             border-radius: 5px;
         }
 
@@ -91,13 +91,14 @@
             display: flex;
             align-items: center;
             background-color: rgba(255, 255, 255, 0.2);
-            padding: 10px 20px;
+            padding: 8px 16px; /* Уменьшил padding */
             border-radius: 30px;
             font-weight: 600;
+            font-size: 14px; /* Уменьшил размер шрифта */
         }
 
         .contact-info i {
-            margin-right: 8px;
+            margin-right: 6px; /* Уменьшил отступ */
         }
 
         /* Hero Section */
@@ -106,31 +107,31 @@
             background-size: cover;
             background-position: center;
             color: white;
-            padding: 100px 0;
+            padding: 80px 0; /* Уменьшил padding */
             text-align: center;
         }
 
         .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
+            font-size: 36px; /* Уменьшил размер шрифта */
+            margin-bottom: 15px; /* Уменьшил отступ */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .hero p {
-            font-size: 20px;
+            font-size: 18px; /* Уменьшил размер шрифта */
             max-width: 700px;
-            margin: 0 auto 30px;
+            margin: 0 auto 25px; /* Уменьшил отступ */
         }
 
         .btn {
             display: inline-block;
             background: linear-gradient(to right, var(--primary), #ff8c00);
             color: white;
-            padding: 14px 32px;
+            padding: 12px 28px; /* Уменьшил padding */
             border-radius: 30px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 18px;
+            font-size: 16px; /* Уменьшил размер шрифта */
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
@@ -145,8 +146,8 @@
         /* Phones Section */
         .section-title {
             text-align: center;
-            margin: 60px 0 40px;
-            font-size: 36px;
+            margin: 50px 0 30px; /* Уменьшил отступы */
+            font-size: 32px; /* Уменьшил размер шрифта */
             color: var(--dark);
             position: relative;
         }
@@ -157,15 +158,15 @@
             width: 80px;
             height: 4px;
             background: linear-gradient(to right, var(--primary), #ff8c00);
-            margin: 15px auto;
+            margin: 12px auto; /* Уменьшил отступ */
             border-radius: 2px;
         }
 
         .phones-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
+            gap: 25px; /* Уменьшил gap */
+            margin-bottom: 50px; /* Уменьшил отступ */
         }
 
         .phone-card {
@@ -177,12 +178,12 @@
         }
 
         .phone-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            transform: translateY(-8px); /* Уменьшил эффект поднятия */
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
         }
 
         .phone-image {
-            height: 200px;
+            height: 180px; /* Уменьшил высоту */
             background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
             display: flex;
             align-items: center;
@@ -202,32 +203,32 @@
         }
 
         .phone-image .phone-icon {
-            font-size: 80px;
+            font-size: 70px; /* Уменьшил размер иконки */
             color: var(--primary);
             z-index: 1;
         }
 
         .phone-info {
-            padding: 20px;
+            padding: 18px; /* Уменьшил padding */
         }
 
         .phone-name {
-            font-size: 20px;
+            font-size: 18px; /* Уменьшил размер шрифта */
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 8px; /* Уменьшил отступ */
             color: var(--dark);
         }
 
         .phone-specs {
             color: #666;
             font-size: 14px;
-            margin-bottom: 15px;
-            height: 120px;
+            margin-bottom: 12px; /* Уменьшил отступ */
+            height: 110px; /* Уменьшил высоту */
             overflow: hidden;
         }
 
         .spec-item {
-            margin-bottom: 5px;
+            margin-bottom: 4px; /* Уменьшил отступ */
             display: flex;
         }
 
@@ -237,10 +238,10 @@
         }
 
         .phone-price {
-            font-size: 22px;
+            font-size: 20px; /* Уменьшил размер шрифта */
             font-weight: 700;
             color: var(--primary);
-            margin-bottom: 15px;
+            margin-bottom: 12px; /* Уменьшил отступ */
         }
 
         .buy-btn {
@@ -249,7 +250,7 @@
             text-align: center;
             background: linear-gradient(to right, var(--primary), #ff8c00);
             color: white;
-            padding: 12px;
+            padding: 10px; /* Уменьшил padding */
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
@@ -264,19 +265,19 @@
         .contact {
             background-color: var(--dark);
             color: white;
-            padding: 80px 0;
+            padding: 70px 0; /* Уменьшил padding */
             text-align: center;
         }
 
         .contact h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
+            font-size: 32px; /* Уменьшил размер шрифта */
+            margin-bottom: 15px; /* Уменьшил отступ */
         }
 
         .contact p {
-            font-size: 18px;
+            font-size: 17px; /* Уменьшил размер шрифта */
             max-width: 600px;
-            margin: 0 auto 30px;
+            margin: 0 auto 25px; /* Уменьшил отступ */
         }
 
         .telegram-link {
@@ -284,18 +285,18 @@
             align-items: center;
             background-color: #0088cc;
             color: white;
-            padding: 15px 30px;
+            padding: 13px 26px; /* Уменьшил padding */
             border-radius: 30px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 18px;
+            font-size: 16px; /* Уменьшил размер шрифта */
             transition: all 0.3s ease;
-            margin-top: 20px;
+            margin-top: 15px; /* Уменьшил отступ */
         }
 
         .telegram-link i {
-            margin-right: 10px;
-            font-size: 24px;
+            margin-right: 8px; /* Уменьшил отступ */
+            font-size: 22px; /* Уменьшил размер иконки */
         }
 
         .telegram-link:hover {
@@ -308,7 +309,7 @@
         footer {
             background-color: var(--dark);
             color: #aaa;
-            padding: 30px 0;
+            padding: 25px 0; /* Уменьшил padding */
             text-align: center;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
@@ -321,25 +322,25 @@
             }
 
             nav ul {
-                margin-top: 20px;
+                margin-top: 15px; /* Уменьшил отступ */
                 flex-wrap: wrap;
                 justify-content: center;
             }
 
             nav ul li {
-                margin: 5px 10px;
+                margin: 4px 8px; /* Уменьшил отступ */
             }
 
             .contact-info {
-                margin-top: 15px;
+                margin-top: 12px; /* Уменьшил отступ */
             }
 
             .hero h1 {
-                font-size: 36px;
+                font-size: 28px; /* Уменьшил размер шрифта */
             }
 
             .hero p {
-                font-size: 18px;
+                font-size: 16px; /* Уменьшил размер шрифта */
             }
             
             .phones-grid {
@@ -731,7 +732,7 @@
                 const targetElement = document.querySelector(targetId);
                 if(targetElement) {
                     window.scrollTo({
-                        top: targetElement.offsetTop - 80,
+                        top: targetElement.offsetTop - 70,
                         behavior: 'smooth'
                     });
                 }
