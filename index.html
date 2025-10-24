@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechStore - Продажа телефонов</title>
+    <title>Xiaomi Store - Продажа смартфонов Xiaomi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -14,10 +14,10 @@
         }
 
         :root {
-            --primary: #4a6cf7;
-            --secondary: #6a11cb;
-            --dark: #1d2144;
-            --light: #f5f8ff;
+            --primary: #ff6700;
+            --secondary: #757575;
+            --dark: #1a1a1a;
+            --light: #f8f8f8;
             --gray: #e7e7e7;
             --text: #333;
         }
@@ -37,7 +37,7 @@
 
         /* Header Styles */
         header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: linear-gradient(135deg, var(--primary), #ff8c00);
             color: white;
             padding: 20px 0;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -102,7 +102,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(29, 33, 68, 0.8), rgba(29, 33, 68, 0.8)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600"><rect width="1200" height="600" fill="%231d2144"/><circle cx="200" cy="150" r="80" fill="%234a6cf7" opacity="0.3"/><circle cx="1000" cy="400" r="120" fill="%236a11cb" opacity="0.3"/><circle cx="800" cy="100" r="60" fill="%234a6cf7" opacity="0.2"/><circle cx="400" cy="450" r="100" fill="%236a11cb" opacity="0.2"/></svg>');
+            background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600"><rect width="1200" height="600" fill="%231a1a1a"/><circle cx="200" cy="150" r="80" fill="%23ff6700" opacity="0.3"/><circle cx="1000" cy="400" r="120" fill="%23ff8c00" opacity="0.3"/><circle cx="800" cy="100" r="60" fill="%23ff6700" opacity="0.2"/><circle cx="400" cy="450" r="100" fill="%23ff8c00" opacity="0.2"/></svg>');
             background-size: cover;
             background-position: center;
             color: white;
@@ -124,7 +124,7 @@
 
         .btn {
             display: inline-block;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
+            background: linear-gradient(to right, var(--primary), #ff8c00);
             color: white;
             padding: 14px 32px;
             border-radius: 30px;
@@ -134,12 +134,12 @@
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
-            box-shadow: 0 4px 15px rgba(74, 108, 247, 0.4);
+            box-shadow: 0 4px 15px rgba(255, 103, 0, 0.4);
         }
 
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(74, 108, 247, 0.6);
+            box-shadow: 0 6px 20px rgba(255, 103, 0, 0.6);
         }
 
         /* Phones Section */
@@ -156,14 +156,14 @@
             display: block;
             width: 80px;
             height: 4px;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
+            background: linear-gradient(to right, var(--primary), #ff8c00);
             margin: 15px auto;
             border-radius: 2px;
         }
 
         .phones-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 30px;
             margin-bottom: 60px;
         }
@@ -198,7 +198,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, rgba(74, 108, 247, 0.1), rgba(106, 17, 203, 0.1));
+            background: linear-gradient(45deg, rgba(255, 103, 0, 0.1), rgba(255, 140, 0, 0.1));
         }
 
         .phone-image .phone-icon {
@@ -222,8 +222,18 @@
             color: #666;
             font-size: 14px;
             margin-bottom: 15px;
-            height: 60px;
+            height: 120px;
             overflow: hidden;
+        }
+
+        .spec-item {
+            margin-bottom: 5px;
+            display: flex;
+        }
+
+        .spec-label {
+            font-weight: 600;
+            min-width: 80px;
         }
 
         .phone-price {
@@ -237,7 +247,7 @@
             display: block;
             width: 100%;
             text-align: center;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
+            background: linear-gradient(to right, var(--primary), #ff8c00);
             color: white;
             padding: 12px;
             border-radius: 8px;
@@ -247,7 +257,7 @@
         }
 
         .buy-btn:hover {
-            background: linear-gradient(to right, #3a5ce5, #5a0dc5);
+            background: linear-gradient(to right, #e55e00, #e57e00);
         }
 
         /* Contact Section */
@@ -331,6 +341,10 @@
             .hero p {
                 font-size: 18px;
             }
+            
+            .phones-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -341,12 +355,12 @@
             <div class="header-content">
                 <div class="logo">
                     <i class="fas fa-mobile-alt"></i>
-                    TechStore
+                    Xiaomi Store
                 </div>
                 <nav>
                     <ul>
                         <li><a href="#home">Главная</a></li>
-                        <li><a href="#phones">Телефоны</a></li>
+                        <li><a href="#phones">Смартфоны</a></li>
                         <li><a href="#contact">Контакты</a></li>
                     </ul>
                 </nav>
@@ -361,8 +375,8 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <h1>Лучшие телефоны по доступным ценам</h1>
-            <p>Мы предлагаем широкий ассортимент смартфонов от ведущих брендов с гарантией качества и быстрой доставкой</p>
+            <h1>Оригинальные смартфоны Xiaomi</h1>
+            <p>Широкий ассортимент смартфонов Xiaomi по лучшим ценам с гарантией качества и быстрой доставкой</p>
             <a href="#phones" class="btn">Смотреть каталог</a>
         </div>
     </section>
@@ -370,82 +384,314 @@
     <!-- Phones Section -->
     <section id="phones">
         <div class="container">
-            <h2 class="section-title">Наши телефоны</h2>
+            <h2 class="section-title">Смартфоны Xiaomi</h2>
             <div class="phones-grid">
-                <!-- Phone 1 -->
+                <!-- Xiaomi Mi Series -->
                 <div class="phone-card">
                     <div class="phone-image">
                         <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
-                        <h3 class="phone-name">Samsung Galaxy S23</h3>
-                        <p class="phone-specs">6.1" Dynamic AMOLED, 128GB, 8GB RAM, Triple Camera</p>
-                        <div class="phone-price">$799</div>
+                        <h3 class="phone-name">Xiaomi Mi 8</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.21" AMOLED, 2248×1080</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 12 МП + 12 МП (2x zoom)</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 845</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 6/128 ГБ</div>
+                        </div>
+                        <div class="phone-price">5 000 ₽</div>
                         <a href="#" class="buy-btn">Купить сейчас</a>
                     </div>
                 </div>
 
-                <!-- Phone 2 -->
                 <div class="phone-card">
                     <div class="phone-image">
                         <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
-                        <h3 class="phone-name">iPhone 14 Pro</h3>
-                        <p class="phone-specs">6.1" Super Retina XDR, 128GB, A16 Bionic, Triple Camera</p>
-                        <div class="phone-price">$999</div>
+                        <h3 class="phone-name">Xiaomi Mi 9</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.39" AMOLED, 2340×1080</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 48 МП + 16 МП + 12 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 855</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 6/128 ГБ</div>
+                        </div>
+                        <div class="phone-price">5 500 ₽</div>
                         <a href="#" class="buy-btn">Купить сейчас</a>
                     </div>
                 </div>
 
-                <!-- Phone 3 -->
                 <div class="phone-card">
                     <div class="phone-image">
                         <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
-                        <h3 class="phone-name">Google Pixel 7</h3>
-                        <p class="phone-specs">6.3" OLED, 128GB, 8GB RAM, Google Tensor G2</p>
-                        <div class="phone-price">$599</div>
+                        <h3 class="phone-name">Xiaomi Mi 9T Pro</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.39" AMOLED, 2340×1080</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 48 МП + 8 МП + 13 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 855</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 6/128 ГБ</div>
+                        </div>
+                        <div class="phone-price">10 000 ₽</div>
                         <a href="#" class="buy-btn">Купить сейчас</a>
                     </div>
                 </div>
 
-                <!-- Phone 4 -->
+                <!-- Xiaomi 10-14 Series -->
                 <div class="phone-card">
                     <div class="phone-image">
                         <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
-                        <h3 class="phone-name">Xiaomi Redmi Note 12</h3>
-                        <p class="phone-specs">6.67" AMOLED, 128GB, 6GB RAM, Snapdragon 685</p>
-                        <div class="phone-price">$299</div>
+                        <h3 class="phone-name">Xiaomi 10 Ultra</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.67" OLED, 2340×1080, 120Hz</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 48 МП + 48 МП + 12 МП + 20 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 865</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 8/256 ГБ</div>
+                        </div>
+                        <div class="phone-price">19 000 ₽</div>
                         <a href="#" class="buy-btn">Купить сейчас</a>
                     </div>
                 </div>
 
-                <!-- Phone 5 -->
                 <div class="phone-card">
                     <div class="phone-image">
                         <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
-                        <h3 class="phone-name">OnePlus 11</h3>
-                        <p class="phone-specs">6.7" Fluid AMOLED, 256GB, 16GB RAM, Snapdragon 8 Gen 2</p>
-                        <div class="phone-price">$699</div>
+                        <h3 class="phone-name">Xiaomi Mi 11 Ultra</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.81" AMOLED, 3200×1440, 120Hz</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 50 МП + 48 МП + 48 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 888</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 12/512 ГБ</div>
+                        </div>
+                        <div class="phone-price">18 000 ₽</div>
                         <a href="#" class="buy-btn">Купить сейчас</a>
                     </div>
                 </div>
 
-                <!-- Phone 6 -->
                 <div class="phone-card">
                     <div class="phone-image">
                         <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
-                        <h3 class="phone-name">Samsung Galaxy A54</h3>
-                        <p class="phone-specs">6.4" Super AMOLED, 128GB, 8GB RAM, Exynos 1380</p>
-                        <div class="phone-price">$449</div>
+                        <h3 class="phone-name">Xiaomi 12S Ultra</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.73" AMOLED, 3200×1440, 120Hz</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 50 МП (1") + 48 МП + 48 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 8+ Gen 1</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 12/512 ГБ</div>
+                        </div>
+                        <div class="phone-price">22 000 ₽</div>
+                        <a href="#" class="buy-btn">Купить сейчас</a>
+                    </div>
+                </div>
+
+                <div class="phone-card">
+                    <div class="phone-image">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
+                    </div>
+                    <div class="phone-info">
+                        <h3 class="phone-name">Xiaomi 13 Ultra</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.73" AMOLED, 3200×1440, 120Hz</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 50 МП (1") + 50 МП + 50 МП + 50 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 8 Gen 2</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 16/512 ГБ</div>
+                        </div>
+                        <div class="phone-price">38 000 ₽</div>
+                        <a href="#" class="buy-btn">Купить сейчас</a>
+                    </div>
+                </div>
+
+                <div class="phone-card">
+                    <div class="phone-image">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
+                    </div>
+                    <div class="phone-info">
+                        <h3 class="phone-name">Xiaomi 13</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.36" AMOLED, 2400×1080, 120Hz</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 50 МП + 10 МП + 12 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 8 Gen 2</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 8/256 ГБ</div>
+                        </div>
+                        <div class="phone-price">18 000 ₽</div>
+                        <a href="#" class="buy-btn">Купить сейчас</a>
+                    </div>
+                </div>
+
+                <div class="phone-card">
+                    <div class="phone-image">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
+                    </div>
+                    <div class="phone-info">
+                        <h3 class="phone-name">Xiaomi 14</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.36" AMOLED, 2670×1200, 120Hz</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 50 МП + 50 МП + 50 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 8 Gen 3</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 12/512 ГБ</div>
+                        </div>
+                        <div class="phone-price">32 000 ₽</div>
+                        <a href="#" class="buy-btn">Купить сейчас</a>
+                    </div>
+                </div>
+
+                <!-- Redmi K Series -->
+                <div class="phone-card">
+                    <div class="phone-image">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
+                    </div>
+                    <div class="phone-info">
+                        <h3 class="phone-name">Xiaomi Redmi K20 Pro</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.39" AMOLED, 2340×1080</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 48 МП + 13 МП + 8 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 855</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 6/128 ГБ</div>
+                        </div>
+                        <div class="phone-price">10 000 ₽</div>
+                        <a href="#" class="buy-btn">Купить сейчас</a>
+                    </div>
+                </div>
+
+                <div class="phone-card">
+                    <div class="phone-image">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
+                    </div>
+                    <div class="phone-info">
+                        <h3 class="phone-name">Redmi K20 Pro Premium</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.39" AMOLED, 2340×1080</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 48 МП + 13 МП + 8 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 855+</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 8/512 ГБ</div>
+                        </div>
+                        <div class="phone-price">15 000 ₽</div>
+                        <a href="#" class="buy-btn">Купить сейчас</a>
+                    </div>
+                </div>
+
+                <div class="phone-card">
+                    <div class="phone-image">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
+                    </div>
+                    <div class="phone-info">
+                        <h3 class="phone-name">Xiaomi K50 Ultra</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.67" OLED, 2712×1220, 120Hz</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 108 МП + 8 МП + 2 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 8+ Gen 1</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 8/256 ГБ</div>
+                        </div>
+                        <div class="phone-price">17 000 ₽</div>
+                        <a href="#" class="buy-btn">Купить сейчас</a>
+                    </div>
+                </div>
+
+                <div class="phone-card">
+                    <div class="phone-image">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
+                    </div>
+                    <div class="phone-info">
+                        <h3 class="phone-name">Xiaomi Redmi K80</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.7" AMOLED, 2712×1220, 120Hz</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 50 МП + 8 МП + 2 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 8 Gen 2</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 12/256 ГБ</div>
+                        </div>
+                        <div class="phone-price">41 000 ₽</div>
+                        <a href="#" class="buy-btn">Купить сейчас</a>
+                    </div>
+                </div>
+
+                <div class="phone-card">
+                    <div class="phone-image">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
+                    </div>
+                    <div class="phone-info">
+                        <h3 class="phone-name">Xiaomi Redmi K80 Pro</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.7" AMOLED, 2712×1220, 120Hz</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 50 МП + 50 МП + 12 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 8 Gen 3</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 16/512 ГБ</div>
+                        </div>
+                        <div class="phone-price">48 000 ₽</div>
+                        <a href="#" class="buy-btn">Купить сейчас</a>
+                    </div>
+                </div>
+
+                <div class="phone-card">
+                    <div class="phone-image">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
+                    </div>
+                    <div class="phone-info">
+                        <h3 class="phone-name">Xiaomi Redmi K80 Ultra</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.8" AMOLED, 2712×1220, 144Hz</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 50 МП + 50 МП + 50 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 8 Gen 3</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 16/1 ТБ</div>
+                        </div>
+                        <div class="phone-price">40 000 ₽</div>
+                        <a href="#" class="buy-btn">Купить сейчас</a>
+                    </div>
+                </div>
+
+                <!-- Xiaomi 12 Series -->
+                <div class="phone-card">
+                    <div class="phone-image">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
+                    </div>
+                    <div class="phone-info">
+                        <h3 class="phone-name">Xiaomi 12S</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.28" AMOLED, 2400×1080, 120Hz</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 50 МП + 13 МП + 5 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 8+ Gen 1</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 8/256 ГБ</div>
+                        </div>
+                        <div class="phone-price">17 000 ₽</div>
+                        <a href="#" class="buy-btn">Купить сейчас</a>
+                    </div>
+                </div>
+
+                <div class="phone-card">
+                    <div class="phone-image">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
+                    </div>
+                    <div class="phone-info">
+                        <h3 class="phone-name">Xiaomi 12X</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.28" AMOLED, 2400×1080, 120Hz</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 50 МП + 13 МП + 5 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 870</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 8/256 ГБ</div>
+                        </div>
+                        <div class="phone-price">16 000 ₽</div>
+                        <a href="#" class="buy-btn">Купить сейчас</a>
+                    </div>
+                </div>
+
+                <div class="phone-card">
+                    <div class="phone-image">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
+                    </div>
+                    <div class="phone-info">
+                        <h3 class="phone-name">Xiaomi 12T Pro</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.67" AMOLED, 2712×1220, 120Hz</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 200 МП + 8 МП + 2 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 8+ Gen 1</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 12/256 ГБ</div>
+                        </div>
+                        <div class="phone-price">20 000 ₽</div>
                         <a href="#" class="buy-btn">Купить сейчас</a>
                     </div>
                 </div>
@@ -468,7 +714,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 TechStore. Все права защищены.</p>
+            <p>&copy; 2023 Xiaomi Store. Все права защищены.</p>
             <p>Telegram для связи: @SM8650</p>
         </div>
     </footer>
