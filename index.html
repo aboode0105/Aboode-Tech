@@ -102,7 +102,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(29, 33, 68, 0.8), rgba(29, 33, 68, 0.8)), url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80');
+            background: linear-gradient(rgba(29, 33, 68, 0.8), rgba(29, 33, 68, 0.8)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600"><rect width="1200" height="600" fill="%231d2144"/><circle cx="200" cy="150" r="80" fill="%234a6cf7" opacity="0.3"/><circle cx="1000" cy="400" r="120" fill="%236a11cb" opacity="0.3"/><circle cx="800" cy="100" r="60" fill="%234a6cf7" opacity="0.2"/><circle cx="400" cy="450" r="100" fill="%236a11cb" opacity="0.2"/></svg>');
             background-size: cover;
             background-position: center;
             color: white;
@@ -183,21 +183,28 @@
 
         .phone-image {
             height: 200px;
-            background-color: var(--gray);
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
             display: flex;
             align-items: center;
             justify-content: center;
             overflow: hidden;
+            position: relative;
         }
 
-        .phone-image img {
-            max-width: 80%;
-            max-height: 80%;
-            transition: transform 0.5s ease;
+        .phone-image:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(74, 108, 247, 0.1), rgba(106, 17, 203, 0.1));
         }
 
-        .phone-card:hover .phone-image img {
-            transform: scale(1.1);
+        .phone-image .phone-icon {
+            font-size: 80px;
+            color: var(--primary);
+            z-index: 1;
         }
 
         .phone-info {
@@ -368,7 +375,7 @@
                 <!-- Phone 1 -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://cdn.thewirecutter.com/wp-content/media/2023/10/androidphones-2048px-4843.jpg?auto=webp&quality=75&width=1024" alt="Samsung Galaxy S23">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Samsung Galaxy S23</h3>
@@ -381,7 +388,7 @@
                 <!-- Phone 2 -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://cdn.thewirecutter.com/wp-content/media/2023/09/iphone-2048px-0913.jpg?auto=webp&quality=75&width=1024" alt="iPhone 14 Pro">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">iPhone 14 Pro</h3>
@@ -394,7 +401,7 @@
                 <!-- Phone 3 -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://cdn.thewirecutter.com/wp-content/media/2023/10/androidphones-2048px-0948.jpg?auto=webp&quality=75&width=1024" alt="Google Pixel 7">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Google Pixel 7</h3>
@@ -407,7 +414,7 @@
                 <!-- Phone 4 -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://cdn.thewirecutter.com/wp-content/media/2023/10/20231011_AndroidBudget_2048px-02542.jpg?auto=webp&quality=75&width=1024" alt="Xiaomi Redmi Note 12">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Xiaomi Redmi Note 12</h3>
@@ -420,7 +427,7 @@
                 <!-- Phone 5 -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://cdn.thewirecutter.com/wp-content/media/2023/10/androidphones-2048px-4845.jpg?auto=webp&quality=75&width=1024" alt="OnePlus 11">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">OnePlus 11</h3>
@@ -433,7 +440,7 @@
                 <!-- Phone 6 -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://cdn.thewirecutter.com/wp-content/media/2023/10/20231011_AndroidBudget_2048px-02544.jpg?auto=webp&quality=75&width=1024" alt="Samsung Galaxy A54">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Samsung Galaxy A54</h3>
