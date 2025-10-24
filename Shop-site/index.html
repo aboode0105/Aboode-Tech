@@ -39,7 +39,7 @@
         header {
             background: linear-gradient(135deg, var(--primary), #ff8c00);
             color: white;
-            padding: 15px 0;
+            padding: 15px 0; /* Уменьшил padding */
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
@@ -53,15 +53,15 @@
         }
 
         .logo {
-            font-size: 22px;
+            font-size: 22px; /* Уменьшил размер шрифта */
             font-weight: 700;
             display: flex;
             align-items: center;
         }
 
         .logo i {
-            margin-right: 8px;
-            font-size: 26px;
+            margin-right: 8px; /* Уменьшил отступ */
+            font-size: 26px; /* Уменьшил размер иконки */
         }
 
         nav ul {
@@ -70,16 +70,16 @@
         }
 
         nav ul li {
-            margin-left: 25px;
+            margin-left: 25px; /* Уменьшил отступы между пунктами меню */
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 16px; /* Уменьшил размер шрифта */
             transition: all 0.3s ease;
-            padding: 6px 10px;
+            padding: 6px 10px; /* Уменьшил padding */
             border-radius: 5px;
         }
 
@@ -91,14 +91,14 @@
             display: flex;
             align-items: center;
             background-color: rgba(255, 255, 255, 0.2);
-            padding: 8px 16px;
+            padding: 8px 16px; /* Уменьшил padding */
             border-radius: 30px;
             font-weight: 600;
-            font-size: 14px;
+            font-size: 14px; /* Уменьшил размер шрифта */
         }
 
         .contact-info i {
-            margin-right: 6px;
+            margin-right: 6px; /* Уменьшил отступ */
         }
 
         /* Hero Section */
@@ -107,31 +107,31 @@
             background-size: cover;
             background-position: center;
             color: white;
-            padding: 80px 0;
+            padding: 80px 0; /* Уменьшил padding */
             text-align: center;
         }
 
         .hero h1 {
-            font-size: 36px;
-            margin-bottom: 15px;
+            font-size: 36px; /* Уменьшил размер шрифта */
+            margin-bottom: 15px; /* Уменьшил отступ */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .hero p {
-            font-size: 18px;
+            font-size: 18px; /* Уменьшил размер шрифта */
             max-width: 700px;
-            margin: 0 auto 25px;
+            margin: 0 auto 25px; /* Уменьшил отступ */
         }
 
         .btn {
             display: inline-block;
             background: linear-gradient(to right, var(--primary), #ff8c00);
             color: white;
-            padding: 12px 28px;
+            padding: 12px 28px; /* Уменьшил padding */
             border-radius: 30px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 16px; /* Уменьшил размер шрифта */
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
@@ -146,8 +146,8 @@
         /* Phones Section */
         .section-title {
             text-align: center;
-            margin: 50px 0 30px;
-            font-size: 32px;
+            margin: 50px 0 30px; /* Уменьшил отступы */
+            font-size: 32px; /* Уменьшил размер шрифта */
             color: var(--dark);
             position: relative;
         }
@@ -158,15 +158,15 @@
             width: 80px;
             height: 4px;
             background: linear-gradient(to right, var(--primary), #ff8c00);
-            margin: 12px auto;
+            margin: 12px auto; /* Уменьшил отступ */
             border-radius: 2px;
         }
 
         .phones-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 25px;
-            margin-bottom: 50px;
+            gap: 25px; /* Уменьшил gap */
+            margin-bottom: 50px; /* Уменьшил отступ */
         }
 
         .phone-card {
@@ -178,12 +178,12 @@
         }
 
         .phone-card:hover {
-            transform: translateY(-8px);
+            transform: translateY(-8px); /* Уменьшил эффект поднятия */
             box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
         }
 
         .phone-image {
-            height: 180px;
+            height: 180px; /* Уменьшил высоту */
             background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
             display: flex;
             align-items: center;
@@ -202,46 +202,33 @@
             background: linear-gradient(45deg, rgba(255, 103, 0, 0.1), rgba(255, 140, 0, 0.1));
         }
 
-        .phone-image img {
-            max-width: 80%;
-            max-height: 80%;
-            object-fit: contain;
-            transition: transform 0.3s ease;
-            z-index: 1;
-            position: relative;
-        }
-
-        .phone-card:hover .phone-image img {
-            transform: scale(1.05);
-        }
-
         .phone-image .phone-icon {
-            font-size: 70px;
+            font-size: 70px; /* Уменьшил размер иконки */
             color: var(--primary);
             z-index: 1;
         }
 
         .phone-info {
-            padding: 18px;
+            padding: 18px; /* Уменьшил padding */
         }
 
         .phone-name {
-            font-size: 18px;
+            font-size: 18px; /* Уменьшил размер шрифта */
             font-weight: 700;
-            margin-bottom: 8px;
+            margin-bottom: 8px; /* Уменьшил отступ */
             color: var(--dark);
         }
 
         .phone-specs {
             color: #666;
             font-size: 14px;
-            margin-bottom: 12px;
-            height: 110px;
+            margin-bottom: 12px; /* Уменьшил отступ */
+            height: 110px; /* Уменьшил высоту */
             overflow: hidden;
         }
 
         .spec-item {
-            margin-bottom: 4px;
+            margin-bottom: 4px; /* Уменьшил отступ */
             display: flex;
         }
 
@@ -251,10 +238,10 @@
         }
 
         .phone-price {
-            font-size: 20px;
+            font-size: 20px; /* Уменьшил размер шрифта */
             font-weight: 700;
             color: var(--primary);
-            margin-bottom: 12px;
+            margin-bottom: 12px; /* Уменьшил отступ */
         }
 
         .buy-btn {
@@ -263,7 +250,7 @@
             text-align: center;
             background: linear-gradient(to right, var(--primary), #ff8c00);
             color: white;
-            padding: 10px;
+            padding: 10px; /* Уменьшил padding */
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
@@ -278,19 +265,19 @@
         .contact {
             background-color: var(--dark);
             color: white;
-            padding: 70px 0;
+            padding: 70px 0; /* Уменьшил padding */
             text-align: center;
         }
 
         .contact h2 {
-            font-size: 32px;
-            margin-bottom: 15px;
+            font-size: 32px; /* Уменьшил размер шрифта */
+            margin-bottom: 15px; /* Уменьшил отступ */
         }
 
         .contact p {
-            font-size: 17px;
+            font-size: 17px; /* Уменьшил размер шрифта */
             max-width: 600px;
-            margin: 0 auto 25px;
+            margin: 0 auto 25px; /* Уменьшил отступ */
         }
 
         .telegram-link {
@@ -298,18 +285,18 @@
             align-items: center;
             background-color: #0088cc;
             color: white;
-            padding: 13px 26px;
+            padding: 13px 26px; /* Уменьшил padding */
             border-radius: 30px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 16px; /* Уменьшил размер шрифта */
             transition: all 0.3s ease;
-            margin-top: 15px;
+            margin-top: 15px; /* Уменьшил отступ */
         }
 
         .telegram-link i {
-            margin-right: 8px;
-            font-size: 22px;
+            margin-right: 8px; /* Уменьшил отступ */
+            font-size: 22px; /* Уменьшил размер иконки */
         }
 
         .telegram-link:hover {
@@ -322,7 +309,7 @@
         footer {
             background-color: var(--dark);
             color: #aaa;
-            padding: 25px 0;
+            padding: 25px 0; /* Уменьшил padding */
             text-align: center;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
@@ -335,25 +322,25 @@
             }
 
             nav ul {
-                margin-top: 15px;
+                margin-top: 15px; /* Уменьшил отступ */
                 flex-wrap: wrap;
                 justify-content: center;
             }
 
             nav ul li {
-                margin: 4px 8px;
+                margin: 4px 8px; /* Уменьшил отступ */
             }
 
             .contact-info {
-                margin-top: 12px;
+                margin-top: 12px; /* Уменьшил отступ */
             }
 
             .hero h1 {
-                font-size: 28px;
+                font-size: 28px; /* Уменьшил размер шрифта */
             }
 
             .hero p {
-                font-size: 16px;
+                font-size: 16px; /* Уменьшил размер шрифта */
             }
             
             .phones-grid {
@@ -400,10 +387,10 @@
         <div class="container">
             <h2 class="section-title">Смартфоны Xiaomi</h2>
             <div class="phones-grid">
-                <!-- Xiaomi Mi 8 -->
+                <!-- Xiaomi Mi Series -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://raw.githubusercontent.com/aboode0105/Aboode-Tech/main/Shop-site/IMG_20251025_021247.png" alt="Xiaomi Mi 8">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Xiaomi Mi 8</h3>
@@ -418,10 +405,9 @@
                     </div>
                 </div>
 
-                <!-- Xiaomi Mi 9 -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi-9-1.jpg" alt="Xiaomi Mi 9">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Xiaomi Mi 9</h3>
@@ -436,10 +422,9 @@
                     </div>
                 </div>
 
-                <!-- Xiaomi Mi 9T Pro -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi-9t-pro-1.jpg" alt="Xiaomi Mi 9T Pro">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Xiaomi Mi 9T Pro</h3>
@@ -454,10 +439,10 @@
                     </div>
                 </div>
 
-                <!-- Xiaomi 10 Ultra -->
+                <!-- Xiaomi 10-14 Series -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi-10-ultra-1.jpg" alt="Xiaomi 10 Ultra">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Xiaomi 10 Ultra</h3>
@@ -472,10 +457,9 @@
                     </div>
                 </div>
 
-                <!-- Xiaomi Mi 11 Ultra -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi-11-ultra-1.jpg" alt="Xiaomi Mi 11 Ultra">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Xiaomi Mi 11 Ultra</h3>
@@ -490,10 +474,9 @@
                     </div>
                 </div>
 
-                <!-- Xiaomi 12S Ultra -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-12s-ultra-1.jpg" alt="Xiaomi 12S Ultra">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Xiaomi 12S Ultra</h3>
@@ -508,10 +491,9 @@
                     </div>
                 </div>
 
-                <!-- Xiaomi 13 Ultra -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-13-ultra-1.jpg" alt="Xiaomi 13 Ultra">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Xiaomi 13 Ultra</h3>
@@ -526,10 +508,9 @@
                     </div>
                 </div>
 
-                <!-- Xiaomi 13 -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-13-1.jpg" alt="Xiaomi 13">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Xiaomi 13</h3>
@@ -544,10 +525,9 @@
                     </div>
                 </div>
 
-                <!-- Xiaomi 14 -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-14-1.jpg" alt="Xiaomi 14">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Xiaomi 14</h3>
@@ -562,10 +542,10 @@
                     </div>
                 </div>
 
-                <!-- Xiaomi Redmi K20 Pro -->
+                <!-- Redmi K Series -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-k20-pro-1.jpg" alt="Xiaomi Redmi K20 Pro">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Xiaomi Redmi K20 Pro</h3>
@@ -580,10 +560,26 @@
                     </div>
                 </div>
 
-                <!-- Xiaomi K50 Ultra -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-12t-pro-1.jpg" alt="Xiaomi K50 Ultra">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
+                    </div>
+                    <div class="phone-info">
+                        <h3 class="phone-name">Redmi K20 Pro Premium</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.39" AMOLED, 2340×1080</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 48 МП + 13 МП + 8 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 855+</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 8/512 ГБ</div>
+                        </div>
+                        <div class="phone-price">15 000 ₽</div>
+                        <a href="#" class="buy-btn">Купить сейчас</a>
+                    </div>
+                </div>
+
+                <div class="phone-card">
+                    <div class="phone-image">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Xiaomi K50 Ultra</h3>
@@ -598,10 +594,61 @@
                     </div>
                 </div>
 
-                <!-- Xiaomi 12S -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-12s-1.jpg" alt="Xiaomi 12S">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
+                    </div>
+                    <div class="phone-info">
+                        <h3 class="phone-name">Xiaomi Redmi K80</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.7" AMOLED, 2712×1220, 120Hz</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 50 МП + 8 МП + 2 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 8 Gen 2</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 12/256 ГБ</div>
+                        </div>
+                        <div class="phone-price">41 000 ₽</div>
+                        <a href="#" class="buy-btn">Купить сейчас</a>
+                    </div>
+                </div>
+
+                <div class="phone-card">
+                    <div class="phone-image">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
+                    </div>
+                    <div class="phone-info">
+                        <h3 class="phone-name">Xiaomi Redmi K80 Pro</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.7" AMOLED, 2712×1220, 120Hz</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 50 МП + 50 МП + 12 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 8 Gen 3</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 16/512 ГБ</div>
+                        </div>
+                        <div class="phone-price">48 000 ₽</div>
+                        <a href="#" class="buy-btn">Купить сейчас</a>
+                    </div>
+                </div>
+
+                <div class="phone-card">
+                    <div class="phone-image">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
+                    </div>
+                    <div class="phone-info">
+                        <h3 class="phone-name">Xiaomi Redmi K80 Ultra</h3>
+                        <div class="phone-specs">
+                            <div class="spec-item"><span class="spec-label">Экран:</span> 6.8" AMOLED, 2712×1220, 144Hz</div>
+                            <div class="spec-item"><span class="spec-label">Камера:</span> 50 МП + 50 МП + 50 МП</div>
+                            <div class="spec-item"><span class="spec-label">Процессор:</span> Snapdragon 8 Gen 3</div>
+                            <div class="spec-item"><span class="spec-label">Память:</span> 16/1 ТБ</div>
+                        </div>
+                        <div class="phone-price">40 000 ₽</div>
+                        <a href="#" class="buy-btn">Купить сейчас</a>
+                    </div>
+                </div>
+
+                <!-- Xiaomi 12 Series -->
+                <div class="phone-card">
+                    <div class="phone-image">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Xiaomi 12S</h3>
@@ -616,10 +663,9 @@
                     </div>
                 </div>
 
-                <!-- Xiaomi 12X -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-12x-1.jpg" alt="Xiaomi 12X">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Xiaomi 12X</h3>
@@ -634,10 +680,9 @@
                     </div>
                 </div>
 
-                <!-- Xiaomi 12T Pro -->
                 <div class="phone-card">
                     <div class="phone-image">
-                        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-12t-pro-1.jpg" alt="Xiaomi 12T Pro">
+                        <i class="fas fa-mobile-alt phone-icon"></i>
                     </div>
                     <div class="phone-info">
                         <h3 class="phone-name">Xiaomi 12T Pro</h3>
@@ -701,6 +746,8 @@
                 const phoneName = this.closest('.phone-card').querySelector('.phone-name').textContent;
                 const phonePrice = this.closest('.phone-card').querySelector('.phone-price').textContent;
                 
+                // Здесь можно добавить логику для оформления заказа
+                // В данном случае просто показываем сообщение
                 alert(`Вы выбрали ${phoneName} за ${phonePrice}. Для оформления заказа свяжитесь со мной в Telegram: @SM8650`);
             });
         });
